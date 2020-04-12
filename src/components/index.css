@@ -1,0 +1,125 @@
+body {
+  color: #2e2121;
+  background-color: #fff;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  padding: 0.75rem;
+  text-align: center;
+  text-shadow: 1px 3px #2e2121;
+  background-image: linear-gradient(rgba(0, 20, 60, 0.7), rgba(0, 20, 60, 0.7)),
+    url(../images/markus-spiske--iOE0qBkioc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header h1,
+header h2,
+header p {
+  color: #fff;
+  font-weight: 900;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0.75rem;
+  border-radius: 20px;
+  min-width: 60vw;
+  max-width: 80ch;
+}
+
+hr {
+  border: none;
+  border-bottom: 6px dotted #9cd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  font-style: italic;
+  color: #444;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin: 1.5rem 0.75rem 0.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p,
+ul {
+  font-size: 1.25rem;
+  margin: 0.25rem 0.75rem 1.5rem;
+}
+
+p + p,
+ul + p,
+p + ul,
+ul + ul {
+  margin: 0.25rem 0.75rem;
+}
+
+a {
+  color: #056;
+}
+
+a:hover {
+  color: #9cd;
+}
+
+a:visited {
+  color: #256;
+}
+
+small {
+  font-size: 1rem;
+}
+
+mark {
+  color: #9cd;
+  background-color: transparent;
+}
+
+main aside {
+  margin: 0;
+  font-size: 1.15rem;
+  position: static;
+}
+
+aside {
+  border-left: 4px solid #9cd;
+  border-radius: 20px;
+  position: sticky;
+  top: 0;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #eee;
+}

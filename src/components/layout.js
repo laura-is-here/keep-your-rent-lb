@@ -7,40 +7,47 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import "typeface-lato"
 
 import Header from "./header"
-import "./layout.css"
+import "./index.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <article>
+      <Header />
+      <main>{children}</main>
+      {/* <aside>
+        <h2>Resources for tenants</h2>
+        <div>
+          <h3>Legal Aid Foundation Los Angeles (LAFLA)</h3>
+          <p>
+            Website: <br />
+            Phone: <br />
+            Email:
+          </p>
+          <hr />
+        </div>
+        <div>
+          <h3>Los Angeles Tenants Union (LATU)</h3>
+          <p>
+            Website: <br />
+            Phone: <br />
+            Email:
+          </p>
+          <hr />
+        </div>
+        <div>
+          <h3>Long Beach Residents Empowered (LiBRE)</h3>
+          <p>
+            Website: <br />
+            Phone: <br />
+            Email:
+          </p>
+          <hr />
+        </div>
+      </aside> */}
+    </article>
   )
 }
 
